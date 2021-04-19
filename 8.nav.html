@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.801);
+        }
+
+        ul>li {
+            display: inline-block;
+            margin: 30px 10px;
+            /* line-height: 4em; */
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: #f5f5f7;
+        }
+
+        #mySection1,
+        #mySection2,
+        #mySection3 {
+            height: 800px;
+        }
+
+        .logo {
+            width: 16px;
+            height: 44px;
+            background-size: 16px 44px;
+            background-repeat: no-repeat;
+            background-image: url(https://www.apple.com/ac/globalnav/6/zh_TW/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg);
+            background-position: center center;
+            width: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="logo"></div>
+                </a>
+            </li>
+            <li><a href="https://www.google.com/">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#mySection2">Section2</a></li>
+            <li><a href="#mySection3">Section3</a></li>
+        </ul>
+    </nav>
+
+    <div id="mySection1">
+        <h1>mySection1</h1>
+    </div>
+    <div id="mySection2">
+        <h1>mySection2</h1>
+    </div>
+    <div id="mySection3">
+        <h1>mySection3</h1>
+    </div>
+</body>
+
+</html>
