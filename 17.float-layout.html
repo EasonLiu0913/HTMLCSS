@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float layout</title>
+    <style>
+        .header {
+            height: 100px;
+            background-color: #afa;
+        }
+
+        .nav {
+            height: 50px;
+            background-color: #ccc;
+        }
+
+        .main {
+            width: 80%;
+            height: 360px;
+            background-color: lightskyblue;
+            float: left;
+        }
+
+        .aside {
+            width: 20%;
+            height: 360px;
+            background-color: lightpink;
+            float: left;
+        }
+
+        .footer {
+            clear: both;
+            height: 100px;
+            background-color: lightsalmon;
+        }
+
+        .card {
+            width: 300px;
+            /* display: inline-block; */
+            margin: 10px;
+            float: left;
+        }
+
+        .img-wrap {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .img-wrap>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 5px 10px 20px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">header</div>
+    <div class="nav">nav bar</div>
+    <div class="main">
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg" alt="">
+            </div>
+
+            <h3>莓果鬆餅1</h3>
+            <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+        </div>
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg" alt="">
+            </div>
+
+            <h3>莓果鬆餅2</h3>
+            <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+        </div>
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg" alt="">
+            </div>
+
+            <h3>莓果鬆餅3</h3>
+            <p>戶外<span>下午茶最值得推薦的點心</span> ，充滿奶香的鬆餅加上酸甜莓果，大人小孩看了都心動，若再配上咖啡跟美景就更完美。</p>
+        </div>
+
+    </div>
+    <div class="aside">aside</div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
