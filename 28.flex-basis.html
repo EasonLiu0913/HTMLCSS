@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex shrink</title>
+    <style>
+        .wrap {
+            width: 70%;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+
+        .box {
+            width: 100px;
+
+            min-width: 200px;
+
+            height: 50px;
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: 1px solid #000;
+            flex: 0 1 50px;
+        }
+
+        .logo {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">Lorem, ipsum dolor 1234567.</div>
+        <div class="box logo">logo</div>
+        <div class="box">icon</div>
+    </div>
+</body>
+
+</html>
