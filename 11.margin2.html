@@ -10,6 +10,17 @@
         section {
             margin-top: 13px;
             margin-bottom: 87px;
+            outline: 1px solid #000;
+            /* 方法一 */
+            /* padding-top: 1px; */
+            /* 方法二 */
+            /* border: 1px solid #afa; */
+        }
+
+        /* 方法三 */
+        section::before {
+            content: "";
+            display: inline-block;
         }
 
         header {

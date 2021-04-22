@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        .priceShow {
+            font-size: 3rem;
+        }
+
+        .priceShow::before {
+            content: "$";
+        }
+
+        .priceShow::after {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 100px;
+            background-color: lightseagreen;
+            background-image: url(https://cdn.pixabay.com/photo/2020/11/01/13/03/lemon-5703655_960_720.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="priceShow">3000</p>
+
+</body>
+
+</html>
