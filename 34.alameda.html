@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alameda</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+
+    <style>
+
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+
+        .container{
+            width: 960px;
+            margin:0 auto;
+            /* background-color: #ccc; */
+        }
+
+        .row{
+            display: flex;
+        }
+
+        .row > div{
+
+        }
+
+        .navbar-left,.logo,.navbar-right{
+            width: 33.3333%;
+        }
+
+        .navbar-left > a{
+            margin-right: 20px;
+        }
+
+        .logo{
+            /* text-align: center; */
+            display:flex;
+            justify-content:center;
+        }
+
+        .navbar-right{
+            display: flex;
+            justify-content: flex-end;
+            gap:24px;
+        }
+
+        .navbar-right > i{
+            font-size: 1.2rem;
+            /* color: red; */
+        }
+
+        .section-title{
+            justify-content:space-between;
+            margin-top: 40px;
+        }
+
+        .buy-link{
+            background-color: #777;
+            /* height: 50%; */
+            padding: 20px;
+            color:#fff;
+        }
+
+        .product-area{
+            justify-content:space-between;
+            margin-top:40px;
+        }
+        .img-300{
+            width: 300px;
+            height: 300px;
+        }
+
+        .img-300 > img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+
+        .subtitle{
+            /* margin: 0 auto; */
+            justify-content:center;
+        }
+
+        .subtitle > span{
+            width: 300px;
+        }
+
+        .demo{
+            margin-top: 40px;
+            justify-content:space-between;
+        }
+
+        .img-57{
+            width: 500px;
+            height: 700px;
+        }
+
+        .img-57 > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .order-1{
+            order:1;
+        }
+
+        .order-2{
+            order:2;
+        }
+
+        .justify-content-center{
+            justify-content: center;
+        }
+
+        .justify-content-end{
+            justify-content: flex-end;
+        }
+
+        .photo{
+            margin-top: 40px;
+        }
+
+        .img-70{
+            width: 70%;
+        }
+
+        .img-30{
+            width: 30%;
+        }
+
+        .img-70 > img, .img-30 > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mt-40{
+            margin-top:40px;
+        }
+
+        .mobile-btn{
+            display:none;
+        }
+        @media screen and (max-width:500px){
+            .container{
+                width: 100%;
+            }
+
+            .navbar-left{
+                display:none;
+            }
+            .mobile-btn{
+                display:block;
+                width: 33.3333%;
+            }
+
+            .img-300{
+                width: 100px;
+                height: 100px;
+            }
+
+            .section-title{
+                align-items: center;
+            }
+            .buy-link{
+                padding:5px 8px;
+                height: 100%;
+            }
+
+            p{
+                font-size: 10px;
+            }
+
+            .img-57{
+                width: 200px;
+            }
+        }
+
+        footer{
+            margin-top:40px
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="row">
+            <div class="mobile-btn">
+                BTN
+            </div>
+            <div class="navbar-left">
+                <a href="#">Shop</a>
+                <a href="#">Lookbook</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="logo">Alameda</div>
+            <div class="navbar-right">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="row section-title">
+            <h2>New In</h2>
+            <a href="#" class="buy-link">Shop Now</a>
+        </section>
+
+        <section class="row product-area">
+            <div class="items">
+                <div class="img-300">
+                    <img src="./website_imgs/product1.jpg" alt="">
+                </div>
+
+                <p>Linen Top/ Blue</p>
+                <p>Linen Top/ Blue</p>
+            </div>
+            <div class="items">
+                <div class="img-300">
+                    <img src="./website_imgs/product2.jpg" alt="">
+                </div>
+
+                <p>Linen Top/ Blue</p>
+            </div>
+            <div class="items">
+                <div class="img-300">
+                    <img src="./website_imgs/product3.jpg" alt="">
+                </div>
+
+                <p>Linen Top/ Blue</p>
+            </div>
+        </section>
+
+        <section class="row subtitle" >
+            <span>Loremipsumdolorsitamet consecteturadipisicingelit. Officiaexercitationem?</span>
+        </section>
+
+        <section class="row demo">
+            <div class="demo-info">
+                <div class="img-300">
+                    <img src="./website_imgs/product4.jpg" alt="">
+                </div>
+                <p>Lisa Shirt</p>
+                <p>$50.00</p>
+            </div>
+
+            <div class="demo-model">
+                <div class="img-57">
+                    <img src="./website_imgs/model1.jpg" alt="model demo product img" title="model">
+                </div>
+            </div>
+        </section>
+        <section class="row demo">
+            <div class="demo-info order-2">
+                <div class="img-300">
+                    <img src="./website_imgs/product4.jpg" alt="">
+                </div>
+                <p>Lisa Shirt</p>
+                <p>$50.00</p>
+            </div>
+
+            <div class="demo-model order-1">
+                <div class="img-57">
+                    <img src="./website_imgs/model1.jpg" alt="model demo product img" title="model">
+                </div>
+            </div>
+        </section>
+
+        <div class="row justify-content-center mt-40" >
+            <a href="#">View Lookbook</a>
+        </div>
+
+        <section class="row photo">
+            <div class="img-70">
+                <img src="./website_imgs/model3.jpg" alt="">
+            </div>
+            <div class="img-30">
+                <img src="./website_imgs/model4.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="row">
+            <input type="text">
+        </div>
+    </footer>
+
+
+</body>
+</html>
