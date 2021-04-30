@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion</title>
+    <style>
+        body{
+            margin:0;
+        }
+
+        .container{
+            border:1px solid #000;
+            margin:10px;
+            
+        }
+
+        .row{
+            border:1px solid red;
+            margin:10px;
+            position: relative;
+        }
+        .img-wrap{
+            border:1px solid rgb(66, 241, 22);
+            margin:10px;
+            
+        }
+
+        .img-wrap > img{
+            width: 100%;
+        }
+
+        p{
+            position:absolute;
+            margin: 0;
+            left:50%;
+            top:50%;
+            background-color:#000;
+            color:#fff;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="img-wrap">
+                <img src="./imgs/pancakes-2291908_960_720.jpg" alt="">
+            </div>
+            <p>文青風</p>
+        </div>
+    </div>
+</body>
+</html>
